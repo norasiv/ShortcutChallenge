@@ -199,6 +199,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kHw-Mz-PtA"/>
+                    <connections>
+                        <outlet property="comicImage" destination="GPX-uf-Juu" id="XLX-p5-aNC"/>
+                        <outlet property="comicTitle" destination="bi8-c5-KcW" id="JDV-nM-X0l"/>
+                        <outlet property="detailsButton" destination="BhN-eL-xW2" id="9Ci-mp-7Wt"/>
+                        <outlet property="explainButton" destination="EMh-w4-D6P" id="g2v-b3-S7V"/>
+                        <outlet property="favoriteButton" destination="y3g-ii-LCG" id="p9w-Ar-N0p"/>
+                        <outlet property="nextButton" destination="mRX-2q-hIB" id="Y2q-Zq-L4K"/>
+                        <outlet property="previousButton" destination="WMC-tC-97s" id="eww-8y-1UM"/>
+                        <outlet property="randomButton" destination="nRo-iW-x72" id="lSz-CA-lIJ"/>
+                        <outlet property="searchButton" destination="IKi-fR-dB1" id="e6n-vZ-lBX"/>
+                        <outlet property="searchField" destination="Rdt-MR-I9Q" id="MCI-6a-IR0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
