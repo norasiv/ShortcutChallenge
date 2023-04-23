@@ -11,7 +11,7 @@ import UIKit
 
 class ImageFetcher {
     
-    //Tar imot url fra API og returnerer et bilde hvis det eksisterer.
+    //Recieves url from API and returns an image if it excists
     func fetchComicImage(_ imageUrl: String, completion: @escaping (UIImage?) -> Void) {
         guard let url = URL(string: imageUrl) else {
             completion(nil)

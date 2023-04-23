@@ -7,23 +7,25 @@
 
 import Foundation
 
-
+//MARK: - protocol for fetching or errorhandling
 protocol ComicManagerDelegate {
     func didFetchComic(_ comicManager: ComicManager, comic: Comic)
     func didGetError(error: Error)
 }
 
 
+//MARK: - manager
 struct ComicManager {
     
     var delegate: ComicManagerDelegate?
 
+    //fetches data with specific id
     func fetchComic(comicId: String){
         let urlString = "https://xkcd.com/\(comicId)/info.0.json"
         performRequest(with: urlString)
     }
     
-    
+    // handles API-request to fetch data
     func performRequest(with urlString: String){
         if let url = URL(string: urlString) {
             
@@ -43,6 +45,8 @@ struct ComicManager {
         }
     }
     
+    
+    // parsing json and setting data to correct names from model
     func parseJSON(_ comicData: Data) -> Comic? {
         let decoder = JSONDecoder()
         do {

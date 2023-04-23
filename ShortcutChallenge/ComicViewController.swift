@@ -30,10 +30,11 @@ class ComicViewController: UIViewController {
         title = "xkcd"
         
         comicManager.delegate = self
+        spinnerAlert(onView: self.view)
         fetchedComic()
     }
     
-    
+    //MARK: - fetches comics with id
     func fetchedComic(){
         let id = String(comicId)
         comicManager.fetchComic(comicId: id)
@@ -41,20 +42,23 @@ class ComicViewController: UIViewController {
     
     
     @IBAction func nextPressed(_ sender: Any) {
+        spinnerAlert(onView: self.view)
         comicId += 1
         fetchedComic()
     }
     
-    
     @IBAction func previousPressed(_ sender: Any) {
+        spinnerAlert(onView: self.view)
         comicId -= 1
         fetchedComic()
     }
     
     @IBAction func randomPressed(_ sender: Any) {
+        spinnerAlert(onView: self.view)
         generateRandomId()
     }
     
+    //MARK: - Gets random number
     func generateRandomId() {
         let randomId = Int.random(in: 1..<2765)
         comicId = randomId
@@ -64,7 +68,7 @@ class ComicViewController: UIViewController {
 }
 
 
-
+//MARK: - ComicManagerDelegate
 extension ComicViewController: ComicManagerDelegate {
     func didFetchComic(_ comicManager: ComicManager, comic: Comic) {
         DispatchQueue.main.async {
@@ -72,12 +76,14 @@ extension ComicViewController: ComicManagerDelegate {
         }
         ImageFetcher().fetchComicImage(comic.img) { image in
             DispatchQueue.main.async {
+                self.stopSpinner()
                 self.comicImage.image = image ?? UIImage(named: "Image Not Found")
                 }
         }
     }
     
     func didGetError(error: Error) {
+        stopSpinner()
         print(error)
         Alert(alertTitle: "There was an error", alertText: error.localizedDescription)
     }
