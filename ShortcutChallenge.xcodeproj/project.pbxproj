@@ -17,7 +17,7 @@
 		61E020FA29F3241E00C8BB07 /* ComicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E020F929F3241E00C8BB07 /* ComicModel.swift */; };
 		61E020FC29F32AB200C8BB07 /* ComicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E020FB29F32AB200C8BB07 /* ComicManager.swift */; };
 		61E020FE29F3EB0400C8BB07 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E020FD29F3EB0400C8BB07 /* Alert.swift */; };
-		61E0210229F5460800C8BB07 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0210129F5460800C8BB07 /* Image.swift */; };
+		61E0210229F5460800C8BB07 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0210129F5460800C8BB07 /* ImageFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		61E020F929F3241E00C8BB07 /* ComicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicModel.swift; sourceTree = "<group>"; };
 		61E020FB29F32AB200C8BB07 /* ComicManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicManager.swift; sourceTree = "<group>"; };
 		61E020FD29F3EB0400C8BB07 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
-		61E0210129F5460800C8BB07 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		61E0210129F5460800C8BB07 /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 		61E0210329F5461600C8BB07 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				61E0210129F5460800C8BB07 /* Image.swift */,
+				61E0210129F5460800C8BB07 /* ImageFetcher.swift */,
 				61E020FD29F3EB0400C8BB07 /* Alert.swift */,
 			);
 			path = Helpers;
@@ -162,7 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61E020E729F30BD400C8BB07 /* ComicViewController.swift in Sources */,
-				61E0210229F5460800C8BB07 /* Image.swift in Sources */,
+				61E0210229F5460800C8BB07 /* ImageFetcher.swift in Sources */,
 				61E020ED29F30BD400C8BB07 /* ShortcutChallenge.xcdatamodeld in Sources */,
 				61E020E329F30BD400C8BB07 /* AppDelegate.swift in Sources */,
 				61E020FA29F3241E00C8BB07 /* ComicModel.swift in Sources */,

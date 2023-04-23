@@ -47,6 +47,11 @@ extension ComicViewController: ComicManagerDelegate {
         DispatchQueue.main.async {
             self.comicTitle.text = comic.title
         }
+        ImageFetcher().fetchComicImage(comic.img) { image in
+            DispatchQueue.main.async {
+                self.comicImage.image = image ?? UIImage(named: "Image Not Found")
+                }
+        }
     }
     
     func didGetError(error: Error) {
