@@ -22,6 +22,7 @@ class ComicViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     
     var comicManager = ComicManager()
+    var comicId = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,10 +35,32 @@ class ComicViewController: UIViewController {
     
     
     func fetchedComic(){
-        comicManager.fetchComic()
+        let id = String(comicId)
+        comicManager.fetchComic(comicId: id)
     }
-
-
+    
+    
+    @IBAction func nextPressed(_ sender: Any) {
+        comicId += 1
+        fetchedComic()
+    }
+    
+    
+    @IBAction func previousPressed(_ sender: Any) {
+        comicId -= 1
+        fetchedComic()
+    }
+    
+    @IBAction func randomPressed(_ sender: Any) {
+        generateRandomId()
+    }
+    
+    func generateRandomId() {
+        let randomId = Int.random(in: 1..<2765)
+        comicId = randomId
+        fetchedComic()
+    }
+    
 }
 
 

@@ -18,8 +18,8 @@ struct ComicManager {
     
     var delegate: ComicManagerDelegate?
 
-    func fetchComic(){
-        let urlString = "https://xkcd.com/101/info.0.json"
+    func fetchComic(comicId: String){
+        let urlString = "https://xkcd.com/\(comicId)/info.0.json"
         performRequest(with: urlString)
     }
     
