@@ -18,6 +18,7 @@
 		61E020FC29F32AB200C8BB07 /* ComicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E020FB29F32AB200C8BB07 /* ComicManager.swift */; };
 		61E020FE29F3EB0400C8BB07 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E020FD29F3EB0400C8BB07 /* Alert.swift */; };
 		61E0210229F5460800C8BB07 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0210129F5460800C8BB07 /* ImageFetcher.swift */; };
+		61E0210529F70C8F00C8BB07 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0210429F70C8F00C8BB07 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		61E020FB29F32AB200C8BB07 /* ComicManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicManager.swift; sourceTree = "<group>"; };
 		61E020FD29F3EB0400C8BB07 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		61E0210129F5460800C8BB07 /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
+		61E0210429F70C8F00C8BB07 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				61E020F929F3241E00C8BB07 /* ComicModel.swift */,
 				61E020FB29F32AB200C8BB07 /* ComicManager.swift */,
 				61E020E629F30BD400C8BB07 /* ComicViewController.swift */,
+				61E0210429F70C8F00C8BB07 /* DetailsViewController.swift */,
 				61E020E829F30BD400C8BB07 /* Main.storyboard */,
 				61E020EE29F30BD500C8BB07 /* Assets.xcassets */,
 				61E020F029F30BD500C8BB07 /* LaunchScreen.storyboard */,
@@ -163,6 +166,7 @@
 			files = (
 				61E020E729F30BD400C8BB07 /* ComicViewController.swift in Sources */,
 				61E0210229F5460800C8BB07 /* ImageFetcher.swift in Sources */,
+				61E0210529F70C8F00C8BB07 /* DetailsViewController.swift in Sources */,
 				61E020ED29F30BD400C8BB07 /* ShortcutChallenge.xcdatamodeld in Sources */,
 				61E020E329F30BD400C8BB07 /* AppDelegate.swift in Sources */,
 				61E020FA29F3241E00C8BB07 /* ComicModel.swift in Sources */,

@@ -40,7 +40,7 @@ class ComicViewController: UIViewController {
         comicManager.fetchComic(comicId: id)
     }
     
-    
+    //MARK: - Next, Previous or Random comic
     @IBAction func nextPressed(_ sender: Any) {
         if comicId != 2765 {
             spinnerAlert(onView: self.view)
@@ -62,11 +62,25 @@ class ComicViewController: UIViewController {
         generateRandomId()
     }
     
+    
     //MARK: - Gets random number
     func generateRandomId() {
         let randomId = Int.random(in: 1..<2765)
         comicId = randomId
         fetchedComic()
+    }
+    
+    //MARK: - Sends comicId to DetailsViewController and presents it
+    @IBAction func detailsPressed(_ sender: Any) {
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "comicDetails", sender: self)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? DetailsViewController {
+            vc.comicId = comicId
+        }
     }
     
 }
