@@ -42,15 +42,19 @@ class ComicViewController: UIViewController {
     
     
     @IBAction func nextPressed(_ sender: Any) {
-        spinnerAlert(onView: self.view)
-        comicId += 1
-        fetchedComic()
+        if comicId != 2765 {
+            spinnerAlert(onView: self.view)
+            comicId += 1
+            fetchedComic()
+        }
     }
     
     @IBAction func previousPressed(_ sender: Any) {
-        spinnerAlert(onView: self.view)
-        comicId -= 1
-        fetchedComic()
+        if comicId != 1 {
+            spinnerAlert(onView: self.view)
+            comicId -= 1
+            fetchedComic()
+        }
     }
     
     @IBAction func randomPressed(_ sender: Any) {
