@@ -25,6 +25,8 @@ struct ComicManager {
         performRequest(with: urlString)
     }
     
+
+    
     // handles API-request to fetch data
     func performRequest(with urlString: String){
         if let url = URL(string: urlString) {

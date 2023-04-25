@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ComicViewController: UIViewController {
+class ComicViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var searchField: UITextField!
@@ -30,6 +30,7 @@ class ComicViewController: UIViewController {
         title = "xkcd"
         
         comicManager.delegate = self
+        searchField.delegate = self
         spinnerAlert(onView: self.view)
         fetchedComic()
     }
@@ -61,6 +62,31 @@ class ComicViewController: UIViewController {
         spinnerAlert(onView: self.view)
         generateRandomId()
     }
+    
+    
+    //MARK: - Search by comic number
+    @IBAction func searchPressed(_ sender: Any) {
+        searchField.endEditing(true)
+        print(searchField.text!)
+    }
+    
+    // click on keyboard to search
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        searchField.endEditing(true)
+        print(searchField.text!)
+        return true
+    }
+    
+    // fetches comic with inputnumber
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if let comicId = searchField.text {
+            spinnerAlert(onView: self.view)
+            comicManager.fetchComic(comicId: comicId)
+        }
+
+        searchField.text = ""
+    }
+    
     
     
     //MARK: - Gets random number
