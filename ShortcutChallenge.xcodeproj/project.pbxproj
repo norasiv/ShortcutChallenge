@@ -19,6 +19,8 @@
 		61E020FE29F3EB0400C8BB07 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E020FD29F3EB0400C8BB07 /* Alert.swift */; };
 		61E0210229F5460800C8BB07 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0210129F5460800C8BB07 /* ImageFetcher.swift */; };
 		61E0210529F70C8F00C8BB07 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0210429F70C8F00C8BB07 /* DetailsViewController.swift */; };
+		61E0210729F8656000C8BB07 /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0210629F8656000C8BB07 /* FavoritesManager.swift */; };
+		61E0210B29F865AA00C8BB07 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0210A29F865AA00C8BB07 /* FavoritesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		61E020FD29F3EB0400C8BB07 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		61E0210129F5460800C8BB07 /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
 		61E0210429F70C8F00C8BB07 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		61E0210629F8656000C8BB07 /* FavoritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesManager.swift; sourceTree = "<group>"; };
+		61E0210A29F865AA00C8BB07 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,16 +72,15 @@
 		61E020E129F30BD400C8BB07 /* ShortcutChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				61E0211029F86A5200C8BB07 /* CoreData */,
+				61E0210929F8658700C8BB07 /* ViewControllers */,
+				61E0210829F8657800C8BB07 /* Managers */,
 				61E0210329F5461600C8BB07 /* Helpers */,
 				61E020F929F3241E00C8BB07 /* ComicModel.swift */,
-				61E020FB29F32AB200C8BB07 /* ComicManager.swift */,
-				61E020E629F30BD400C8BB07 /* ComicViewController.swift */,
-				61E0210429F70C8F00C8BB07 /* DetailsViewController.swift */,
 				61E020E829F30BD400C8BB07 /* Main.storyboard */,
 				61E020EE29F30BD500C8BB07 /* Assets.xcassets */,
 				61E020F029F30BD500C8BB07 /* LaunchScreen.storyboard */,
 				61E020F329F30BD500C8BB07 /* Info.plist */,
-				61E020EB29F30BD400C8BB07 /* ShortcutChallenge.xcdatamodeld */,
 				61E020E229F30BD400C8BB07 /* AppDelegate.swift */,
 				61E020E429F30BD400C8BB07 /* SceneDelegate.swift */,
 			);
@@ -91,6 +94,33 @@
 				61E020FD29F3EB0400C8BB07 /* Alert.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		61E0210829F8657800C8BB07 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				61E020FB29F32AB200C8BB07 /* ComicManager.swift */,
+				61E0210629F8656000C8BB07 /* FavoritesManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		61E0210929F8658700C8BB07 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				61E0210429F70C8F00C8BB07 /* DetailsViewController.swift */,
+				61E020E629F30BD400C8BB07 /* ComicViewController.swift */,
+				61E0210A29F865AA00C8BB07 /* FavoritesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		61E0211029F86A5200C8BB07 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				61E020EB29F30BD400C8BB07 /* ShortcutChallenge.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,10 +195,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				61E020E729F30BD400C8BB07 /* ComicViewController.swift in Sources */,
+				61E0210729F8656000C8BB07 /* FavoritesManager.swift in Sources */,
 				61E0210229F5460800C8BB07 /* ImageFetcher.swift in Sources */,
 				61E0210529F70C8F00C8BB07 /* DetailsViewController.swift in Sources */,
 				61E020ED29F30BD400C8BB07 /* ShortcutChallenge.xcdatamodeld in Sources */,
 				61E020E329F30BD400C8BB07 /* AppDelegate.swift in Sources */,
+				61E0210B29F865AA00C8BB07 /* FavoritesViewController.swift in Sources */,
 				61E020FA29F3241E00C8BB07 /* ComicModel.swift in Sources */,
 				61E020E529F30BD400C8BB07 /* SceneDelegate.swift in Sources */,
 				61E020FC29F32AB200C8BB07 /* ComicManager.swift in Sources */,

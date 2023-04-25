@@ -19,17 +19,18 @@
                     </tabBar>
                     <connections>
                         <segue destination="8qr-Sq-1SP" kind="relationship" relationship="viewControllers" id="5Hi-lL-cVR"/>
+                        <segue destination="0uC-vx-xx6" kind="relationship" relationship="viewControllers" id="i0a-H4-Ipy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XcC-8a-yGg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="207" y="-1032"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="Rpu-dS-JTZ">
             <objects>
                 <navigationController id="8qr-Sq-1SP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="PDs-pY-fLa"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" selectedImage="Home" id="PDs-pY-fLa"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VyS-nE-Qbi">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -41,6 +42,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jhB-Ke-qaY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-708" y="-246"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="bKZ-pa-hkl">
+            <objects>
+                <navigationController id="0uC-vx-xx6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorites" image="Heart" selectedImage="Heart" id="iCj-YW-IaQ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kg8-9L-INy">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="W8M-jx-OYo" kind="relationship" relationship="rootViewController" id="Ykp-HO-aV9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c3D-t4-xCL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="206" y="-247"/>
         </scene>
         <!--Comic View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -232,6 +250,22 @@
             </objects>
             <point key="canvasLocation" x="-709.23076923076917" y="495.49763033175356"/>
         </scene>
+        <!--Favorites View Controller-->
+        <scene sceneID="4hH-I1-CLB">
+            <objects>
+                <viewController id="W8M-jx-OYo" customClass="FavoritesViewController" customModule="ShortcutChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d47-Hs-vRD">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Wgf-MH-kGb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="53L-k2-wF9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zDc-rB-RzB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205" y="495"/>
+        </scene>
         <!--Details View Controller-->
         <scene sceneID="vPN-ea-px0">
             <objects>
@@ -381,6 +415,7 @@
     </scenes>
     <resources>
         <image name="Heart" width="24" height="24"/>
+        <image name="Home" width="24" height="24"/>
         <image name="Search" width="24" height="24"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
