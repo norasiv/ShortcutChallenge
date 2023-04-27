@@ -22,7 +22,10 @@ class ComicViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var nextButton: UIButton!
     
     var comicManager = ComicManager()
+    var favoritesManager = FavoritesManager()
+    var comicModel: Comic?
     var comicId = 1
+    var isHeartPressed = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -109,12 +112,30 @@ class ComicViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    
+    
+    @IBAction func heartPressed(_ sender: Any) {
+        saveComic()
+    }
+    
+    func saveComic() {
+//        let title = comicModel?.title ?? "Not"
+//        let img = comicModel?.img ?? "Working"
+//        let num = comicModel?.num ?? 0
+        favoritesManager.saveComics(title: "hello", img: "there", num: 14)
+        //print(title)
+    }
+    
 }
 
 
 //MARK: - ComicManagerDelegate
 extension ComicViewController: ComicManagerDelegate {
+    
+    
+    
     func didFetchComic(_ comicManager: ComicManager, comic: Comic) {
+        comicModel = comic
         DispatchQueue.main.async {
             self.comicTitle.text = comic.title
         }
@@ -124,6 +145,7 @@ extension ComicViewController: ComicManagerDelegate {
                 self.comicImage.image = image ?? UIImage(named: "Image Not Found")
                 }
         }
+        
     }
     
     func didGetError(error: Error) {

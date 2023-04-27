@@ -11,7 +11,6 @@
 		61E020E529F30BD400C8BB07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E020E429F30BD400C8BB07 /* SceneDelegate.swift */; };
 		61E020E729F30BD400C8BB07 /* ComicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E020E629F30BD400C8BB07 /* ComicViewController.swift */; };
 		61E020EA29F30BD400C8BB07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61E020E829F30BD400C8BB07 /* Main.storyboard */; };
-		61E020ED29F30BD400C8BB07 /* ShortcutChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61E020EB29F30BD400C8BB07 /* ShortcutChallenge.xcdatamodeld */; };
 		61E020EF29F30BD500C8BB07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61E020EE29F30BD500C8BB07 /* Assets.xcassets */; };
 		61E020F229F30BD500C8BB07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61E020F029F30BD500C8BB07 /* LaunchScreen.storyboard */; };
 		61E020FA29F3241E00C8BB07 /* ComicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E020F929F3241E00C8BB07 /* ComicModel.swift */; };
@@ -21,6 +20,9 @@
 		61E0210529F70C8F00C8BB07 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0210429F70C8F00C8BB07 /* DetailsViewController.swift */; };
 		61E0210729F8656000C8BB07 /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0210629F8656000C8BB07 /* FavoritesManager.swift */; };
 		61E0210B29F865AA00C8BB07 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0210A29F865AA00C8BB07 /* FavoritesViewController.swift */; };
+		61EF26FC29FAF71000D6EAD7 /* MyFavoriteComics.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61EF26FA29FAF71000D6EAD7 /* MyFavoriteComics.xcdatamodeld */; };
+		61EF270329FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EF270129FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataClass.swift */; };
+		61EF270429FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EF270229FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +31,6 @@
 		61E020E429F30BD400C8BB07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		61E020E629F30BD400C8BB07 /* ComicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewController.swift; sourceTree = "<group>"; };
 		61E020E929F30BD400C8BB07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		61E020EC29F30BD400C8BB07 /* ShortcutChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShortcutChallenge.xcdatamodel; sourceTree = "<group>"; };
 		61E020EE29F30BD500C8BB07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61E020F129F30BD500C8BB07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61E020F329F30BD500C8BB07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +41,9 @@
 		61E0210429F70C8F00C8BB07 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		61E0210629F8656000C8BB07 /* FavoritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesManager.swift; sourceTree = "<group>"; };
 		61E0210A29F865AA00C8BB07 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		61EF26FB29FAF71000D6EAD7 /* FavoritesSaved.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoritesSaved.xcdatamodel; sourceTree = "<group>"; };
+		61EF270129FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MyFavoriteComics+CoreDataClass.swift"; path = "../MyFavoriteComics+CoreDataClass.swift"; sourceTree = "<group>"; };
+		61EF270229FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MyFavoriteComics+CoreDataProperties.swift"; path = "../MyFavoriteComics+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +76,9 @@
 		61E020E129F30BD400C8BB07 /* ShortcutChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				61E0211029F86A5200C8BB07 /* CoreData */,
+				61EF270129FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataClass.swift */,
+				61EF270229FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataProperties.swift */,
+				61EF26FA29FAF71000D6EAD7 /* MyFavoriteComics.xcdatamodeld */,
 				61E0210929F8658700C8BB07 /* ViewControllers */,
 				61E0210829F8657800C8BB07 /* Managers */,
 				61E0210329F5461600C8BB07 /* Helpers */,
@@ -113,14 +119,6 @@
 				61E0210A29F865AA00C8BB07 /* FavoritesViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		61E0211029F86A5200C8BB07 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				61E020EB29F30BD400C8BB07 /* ShortcutChallenge.xcdatamodeld */,
-			);
-			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,14 +195,16 @@
 				61E020E729F30BD400C8BB07 /* ComicViewController.swift in Sources */,
 				61E0210729F8656000C8BB07 /* FavoritesManager.swift in Sources */,
 				61E0210229F5460800C8BB07 /* ImageFetcher.swift in Sources */,
+				61EF26FC29FAF71000D6EAD7 /* MyFavoriteComics.xcdatamodeld in Sources */,
 				61E0210529F70C8F00C8BB07 /* DetailsViewController.swift in Sources */,
-				61E020ED29F30BD400C8BB07 /* ShortcutChallenge.xcdatamodeld in Sources */,
 				61E020E329F30BD400C8BB07 /* AppDelegate.swift in Sources */,
 				61E0210B29F865AA00C8BB07 /* FavoritesViewController.swift in Sources */,
+				61EF270429FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataProperties.swift in Sources */,
 				61E020FA29F3241E00C8BB07 /* ComicModel.swift in Sources */,
 				61E020E529F30BD400C8BB07 /* SceneDelegate.swift in Sources */,
 				61E020FC29F32AB200C8BB07 /* ComicManager.swift in Sources */,
 				61E020FE29F3EB0400C8BB07 /* Alert.swift in Sources */,
+				61EF270329FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,13 +424,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		61E020EB29F30BD400C8BB07 /* ShortcutChallenge.xcdatamodeld */ = {
+		61EF26FA29FAF71000D6EAD7 /* MyFavoriteComics.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				61E020EC29F30BD400C8BB07 /* ShortcutChallenge.xcdatamodel */,
+				61EF26FB29FAF71000D6EAD7 /* FavoritesSaved.xcdatamodel */,
 			);
-			currentVersion = 61E020EC29F30BD400C8BB07 /* ShortcutChallenge.xcdatamodel */;
-			path = ShortcutChallenge.xcdatamodeld;
+			currentVersion = 61EF26FB29FAF71000D6EAD7 /* FavoritesSaved.xcdatamodel */;
+			path = MyFavoriteComics.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

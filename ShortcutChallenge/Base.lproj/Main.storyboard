@@ -104,6 +104,9 @@
                                 <color key="tintColor" red="0.16078431369999999" green="0.35686274509999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="Heart"/>
+                                <connections>
+                                    <action selector="heartPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gRB-op-P49"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMC-tC-97s">
                                 <rect key="frame" x="35" y="678" width="90" height="40"/>
