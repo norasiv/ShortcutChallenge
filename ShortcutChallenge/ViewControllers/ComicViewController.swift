@@ -119,11 +119,10 @@ class ComicViewController: UIViewController, UITextFieldDelegate {
     }
     
     func saveComic() {
-//        let title = comicModel?.title ?? "Not"
-//        let img = comicModel?.img ?? "Working"
-//        let num = comicModel?.num ?? 0
-        favoritesManager.saveComics(title: "hello", img: "there", num: 14)
-        //print(title)
+        let title = comicModel?.title ?? "Not"
+        let img = comicModel?.img ?? "Working"
+        let num = comicModel?.num ?? 0
+        favoritesManager.saveComics(title: title, img: img, num: num)
     }
     
 }
