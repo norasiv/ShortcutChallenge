@@ -31,7 +31,9 @@ class DetailsViewController: UIViewController {
         
         comicManager.delegate = self
         fetchedComic()
+        
     }
+    
     
     func fetchedComic(){
         print(comicId)

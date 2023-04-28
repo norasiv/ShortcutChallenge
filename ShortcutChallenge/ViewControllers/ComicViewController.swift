@@ -69,6 +69,12 @@ class ComicViewController: UIViewController, UITextFieldDelegate {
         generateRandomId()
     }
     
+    func generateRandomId() {
+        let randomId = Int.random(in: 1..<2765)
+        comicId = randomId
+        fetchedComic()
+    }
+    
     
     //MARK: - Search by comic number
     @IBAction func searchPressed(_ sender: Any) {
@@ -85,22 +91,15 @@ class ComicViewController: UIViewController, UITextFieldDelegate {
     
     // fetches comic with inputnumber
     func textFieldDidEndEditing(_ textField: UITextField) {
-        if let comicId = searchField.text {
+            let newId = Int(searchField.text ?? "") ?? 0
+            comicId = newId
             spinnerAlert(onView: self.view)
-            comicManager.fetchComic(comicId: comicId)
-        }
-
+            comicManager.fetchComic(comicId: String(comicId))
+            
         searchField.text = ""
     }
     
-    
-    
-    //MARK: - Gets random number
-    func generateRandomId() {
-        let randomId = Int.random(in: 1..<2765)
-        comicId = randomId
-        fetchedComic()
-    }
+
     
     //MARK: - Sends comicId to DetailsViewController and presents it
     @IBAction func detailsPressed(_ sender: Any) {
@@ -113,6 +112,12 @@ class ComicViewController: UIViewController, UITextFieldDelegate {
         if let vc = segue.destination as? DetailsViewController {
             vc.comicId = comicId
         }
+    }
+    
+    //MARK: - Sends user to explanation website
+    @IBAction func explanationPressed(_ sender: Any) {
+        guard let url = URL(string: "https://www.explainxkcd.com/wiki/index.php/\(comicId)") else { return }
+        UIApplication.shared.open(url)
     }
     
     
@@ -138,7 +143,7 @@ extension ComicViewController: ComicManagerDelegate {
     func didFetchComic(_ comicManager: ComicManager, comic: Comic) {
         comicModel = comic
         DispatchQueue.main.async {
-            self.comicTitle.text = comic.title
+            self.comicTitle.text = "\(comic.title) (\(self.comicId))"
         }
         ImageFetcher().fetchComicImage(comic.img) { image in
             DispatchQueue.main.async {

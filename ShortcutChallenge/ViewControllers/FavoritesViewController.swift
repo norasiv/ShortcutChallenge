@@ -58,7 +58,7 @@ extension FavoritesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FavoritesCell") as! FavoritesCell
         cell.titleLabel.text = Array(comics)[indexPath.section].value[indexPath.row].title
-        cell.numberLabel.text = String(Array(comics)[indexPath.section].value[indexPath.row].num)
+        cell.numberLabel.text = "Comic number: \(String(Array(comics)[indexPath.section].value[indexPath.row].num))"
         
         ImageFetcher().fetchComicImage(Array(comics)[indexPath.section].value[indexPath.row].img ?? "") { image in
             DispatchQueue.main.async {
