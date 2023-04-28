@@ -45,8 +45,8 @@
 		61E0210629F8656000C8BB07 /* FavoritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesManager.swift; sourceTree = "<group>"; };
 		61E0210A29F865AA00C8BB07 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		61EF26FB29FAF71000D6EAD7 /* FavoritesSaved.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoritesSaved.xcdatamodel; sourceTree = "<group>"; };
-		61EF270129FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MyFavoriteComics+CoreDataClass.swift"; path = "../MyFavoriteComics+CoreDataClass.swift"; sourceTree = "<group>"; };
-		61EF270229FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MyFavoriteComics+CoreDataProperties.swift"; path = "../MyFavoriteComics+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		61EF270129FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyFavoriteComics+CoreDataClass.swift"; sourceTree = "<group>"; };
+		61EF270229FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyFavoriteComics+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		61EF270529FBD39B00D6EAD7 /* FavoritesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
 		61EF270629FBD39B00D6EAD7 /* FavoritesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesCell.xib; sourceTree = "<group>"; };
 		61EF270929FC0D4C00D6EAD7 /* LicensingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensingViewController.swift; sourceTree = "<group>"; };
@@ -82,9 +82,7 @@
 		61E020E129F30BD400C8BB07 /* ShortcutChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				61EF270129FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataClass.swift */,
-				61EF270229FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataProperties.swift */,
-				61EF26FA29FAF71000D6EAD7 /* MyFavoriteComics.xcdatamodeld */,
+				61EF270D29FC19CF00D6EAD7 /* CoreData */,
 				61E0210929F8658700C8BB07 /* ViewControllers */,
 				61E0210829F8657800C8BB07 /* Managers */,
 				61E0210329F5461600C8BB07 /* Helpers */,
@@ -144,6 +142,16 @@
 				61E020F929F3241E00C8BB07 /* ComicModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		61EF270D29FC19CF00D6EAD7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				61EF270129FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataClass.swift */,
+				61EF270229FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataProperties.swift */,
+				61EF26FA29FAF71000D6EAD7 /* MyFavoriteComics.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
