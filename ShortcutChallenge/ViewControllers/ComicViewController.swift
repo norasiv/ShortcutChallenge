@@ -78,25 +78,34 @@ class ComicViewController: UIViewController, UITextFieldDelegate {
     
     //MARK: - Search by comic number
     @IBAction func searchPressed(_ sender: Any) {
-        searchField.endEditing(true)
-        print(searchField.text!)
+        checkInput()
     }
     
     // click on keyboard to search
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        searchField.endEditing(true)
-        print(searchField.text!)
+        checkInput()
         return true
     }
     
-    // fetches comic with inputnumber
+    
+    // search for comic with inputnumber
     func textFieldDidEndEditing(_ textField: UITextField) {
-            let newId = Int(searchField.text ?? "") ?? 0
+            checkInput()
+            searchField.text = ""
+    }
+    
+    // check if input is too high or low
+    func checkInput() {
+        let newId = Int(searchField.text ?? "") ?? 1
+
+        if newId > 2765 || newId < 1 {
+            Alert(alertTitle: "There is no comic by that number", alertText: "Search a comic between 1 and 2765")
+            comicManager.fetchComic(comicId: String(comicId))
+        } else {
             comicId = newId
             spinnerAlert(onView: self.view)
             comicManager.fetchComic(comicId: String(comicId))
-            
-        searchField.text = ""
+        }
     }
     
 
