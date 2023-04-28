@@ -26,6 +26,8 @@ class ComicViewController: UIViewController, UITextFieldDelegate {
     var comicModel: Comic?
     var comicId = 1
     var isHeartPressed = false
+    let heartFilled = UIImage(named: "HeartFilled")
+    let heartNotFilled = UIImage(named: "Heart")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +44,7 @@ class ComicViewController: UIViewController, UITextFieldDelegate {
     func fetchedComic(){
         let id = String(comicId)
         comicManager.fetchComic(comicId: id)
+        favoriteButton.setImage(heartNotFilled, for: .normal)
     }
     
     //MARK: - Next, Previous or Random comic
@@ -113,7 +116,7 @@ class ComicViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    
+    //MARK: - Favorite comics and save to core data
     @IBAction func heartPressed(_ sender: Any) {
         saveComic()
     }
@@ -123,6 +126,7 @@ class ComicViewController: UIViewController, UITextFieldDelegate {
         let img = comicModel?.img ?? "Working"
         let num = comicModel?.num ?? 0
         favoritesManager.saveComics(title: title, img: img, num: num)
+        favoriteButton.setImage(heartFilled, for: .normal)
     }
     
 }
@@ -130,8 +134,6 @@ class ComicViewController: UIViewController, UITextFieldDelegate {
 
 //MARK: - ComicManagerDelegate
 extension ComicViewController: ComicManagerDelegate {
-    
-    
     
     func didFetchComic(_ comicManager: ComicManager, comic: Comic) {
         comicModel = comic

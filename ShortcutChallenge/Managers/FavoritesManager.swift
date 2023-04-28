@@ -31,6 +31,7 @@ class FavoritesManager: UIViewController {
             print("there was an error \(error)")
         }
     }
+    
 
     func fetchFavoriteComics() -> [String?: [MyFavoriteComics]] {
         do {

@@ -23,6 +23,8 @@
 		61EF26FC29FAF71000D6EAD7 /* MyFavoriteComics.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61EF26FA29FAF71000D6EAD7 /* MyFavoriteComics.xcdatamodeld */; };
 		61EF270329FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EF270129FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataClass.swift */; };
 		61EF270429FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EF270229FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataProperties.swift */; };
+		61EF270729FBD39B00D6EAD7 /* FavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EF270529FBD39B00D6EAD7 /* FavoritesCell.swift */; };
+		61EF270829FBD39B00D6EAD7 /* FavoritesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61EF270629FBD39B00D6EAD7 /* FavoritesCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		61EF26FB29FAF71000D6EAD7 /* FavoritesSaved.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoritesSaved.xcdatamodel; sourceTree = "<group>"; };
 		61EF270129FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MyFavoriteComics+CoreDataClass.swift"; path = "../MyFavoriteComics+CoreDataClass.swift"; sourceTree = "<group>"; };
 		61EF270229FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MyFavoriteComics+CoreDataProperties.swift"; path = "../MyFavoriteComics+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		61EF270529FBD39B00D6EAD7 /* FavoritesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
+		61EF270629FBD39B00D6EAD7 /* FavoritesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 				61E0210429F70C8F00C8BB07 /* DetailsViewController.swift */,
 				61E020E629F30BD400C8BB07 /* ComicViewController.swift */,
 				61E0210A29F865AA00C8BB07 /* FavoritesViewController.swift */,
+				61EF270529FBD39B00D6EAD7 /* FavoritesCell.swift */,
+				61EF270629FBD39B00D6EAD7 /* FavoritesCell.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -180,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61E020F229F30BD500C8BB07 /* LaunchScreen.storyboard in Resources */,
+				61EF270829FBD39B00D6EAD7 /* FavoritesCell.xib in Resources */,
 				61E020EF29F30BD500C8BB07 /* Assets.xcassets in Resources */,
 				61E020EA29F30BD400C8BB07 /* Main.storyboard in Resources */,
 			);
@@ -193,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61E020E729F30BD400C8BB07 /* ComicViewController.swift in Sources */,
+				61EF270729FBD39B00D6EAD7 /* FavoritesCell.swift in Sources */,
 				61E0210729F8656000C8BB07 /* FavoritesManager.swift in Sources */,
 				61E0210229F5460800C8BB07 /* ImageFetcher.swift in Sources */,
 				61EF26FC29FAF71000D6EAD7 /* MyFavoriteComics.xcdatamodeld in Sources */,

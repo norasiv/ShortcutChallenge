@@ -257,17 +257,35 @@
         <scene sceneID="4hH-I1-CLB">
             <objects>
                 <viewController id="W8M-jx-OYo" customClass="FavoritesViewController" customModule="ShortcutChallenge" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="d47-Hs-vRD">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="d47-Hs-vRD">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3Aa-3U-rM4">
+                                <rect key="frame" x="20" y="121" width="370" height="693"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="370" id="s5h-yC-n8y"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Wgf-MH-kGb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Aa-3U-rM4" firstAttribute="top" secondItem="Wgf-MH-kGb" secondAttribute="top" constant="30" id="62h-mB-Lue"/>
+                            <constraint firstAttribute="bottom" secondItem="3Aa-3U-rM4" secondAttribute="bottom" constant="30" id="Yct-Wb-Wky"/>
+                            <constraint firstItem="3Aa-3U-rM4" firstAttribute="trailing" secondItem="Wgf-MH-kGb" secondAttribute="trailing" constant="10" id="a4L-eZ-gMm"/>
+                            <constraint firstItem="3Aa-3U-rM4" firstAttribute="leading" secondItem="Wgf-MH-kGb" secondAttribute="leading" constant="10" id="im1-eH-ECS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="53L-k2-wF9"/>
+                    <connections>
+                        <outlet property="tableView" destination="3Aa-3U-rM4" id="26d-93-8JK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zDc-rB-RzB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="205" y="495"/>
+            <point key="canvasLocation" x="204.61538461538461" y="494.78672985781986"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="vPN-ea-px0">
