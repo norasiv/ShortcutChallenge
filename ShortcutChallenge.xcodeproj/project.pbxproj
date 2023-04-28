@@ -88,8 +88,8 @@
 				61E0210929F8658700C8BB07 /* ViewControllers */,
 				61E0210829F8657800C8BB07 /* Managers */,
 				61E0210329F5461600C8BB07 /* Helpers */,
-				61E020F929F3241E00C8BB07 /* ComicModel.swift */,
-				61E020E829F30BD400C8BB07 /* Main.storyboard */,
+				61EF270B29FC172A00D6EAD7 /* Views */,
+				61EF270C29FC19AA00D6EAD7 /* Model */,
 				61E020EE29F30BD500C8BB07 /* Assets.xcassets */,
 				61E020F029F30BD500C8BB07 /* LaunchScreen.storyboard */,
 				61E020F329F30BD500C8BB07 /* Info.plist */,
@@ -123,11 +123,27 @@
 				61E0210429F70C8F00C8BB07 /* DetailsViewController.swift */,
 				61E020E629F30BD400C8BB07 /* ComicViewController.swift */,
 				61E0210A29F865AA00C8BB07 /* FavoritesViewController.swift */,
-				61EF270529FBD39B00D6EAD7 /* FavoritesCell.swift */,
-				61EF270629FBD39B00D6EAD7 /* FavoritesCell.xib */,
 				61EF270929FC0D4C00D6EAD7 /* LicensingViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		61EF270B29FC172A00D6EAD7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				61E020E829F30BD400C8BB07 /* Main.storyboard */,
+				61EF270629FBD39B00D6EAD7 /* FavoritesCell.xib */,
+				61EF270529FBD39B00D6EAD7 /* FavoritesCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		61EF270C29FC19AA00D6EAD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				61E020F929F3241E00C8BB07 /* ComicModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

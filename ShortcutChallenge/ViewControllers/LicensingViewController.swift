@@ -17,9 +17,7 @@ class LicensingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "Licensing"
-        
+
         licenseLabel.text = "This work is licensed under a Creative Commons Attribution-NonCommercial 2.5 License"
     }
     

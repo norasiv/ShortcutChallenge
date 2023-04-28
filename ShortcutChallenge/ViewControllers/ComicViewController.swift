@@ -136,11 +136,15 @@ class ComicViewController: UIViewController, UITextFieldDelegate {
     }
     
     func saveComic() {
-        let title = comicModel?.title ?? "Not"
-        let img = comicModel?.img ?? "Working"
-        let num = comicModel?.num ?? 0
-        favoritesManager.saveComics(title: title, img: img, num: num)
-        favoriteButton.setImage(heartFilled, for: .normal)
+        if let saveComic = comicModel {
+            let title = saveComic.title
+            let img = saveComic.img
+            let num = saveComic.num
+            favoritesManager.saveComics(title: title, img: img, num: num)
+            favoriteButton.setImage(heartFilled, for: .normal)
+        } else {
+            Alert(alertTitle: "Something went wrong", alertText: "Something went wrong")
+        }
     }
     
 }

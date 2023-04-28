@@ -17,7 +17,7 @@ class FavoritesManager: UIViewController {
     var favoritedComics = [String?: [MyFavoriteComics]]()
     var model = [MyFavoriteComics]()
 
-    
+    //MARK: - save and fetch data with CoreData
     func saveComics(title: String, img: String, num: Int) {
         let favoriteComics = MyFavoriteComics(context: context)
         favoriteComics.title = title
