@@ -25,6 +25,7 @@
 		61EF270429FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EF270229FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataProperties.swift */; };
 		61EF270729FBD39B00D6EAD7 /* FavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EF270529FBD39B00D6EAD7 /* FavoritesCell.swift */; };
 		61EF270829FBD39B00D6EAD7 /* FavoritesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61EF270629FBD39B00D6EAD7 /* FavoritesCell.xib */; };
+		61EF270A29FC0D4C00D6EAD7 /* LicensingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EF270929FC0D4C00D6EAD7 /* LicensingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		61EF270229FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MyFavoriteComics+CoreDataProperties.swift"; path = "../MyFavoriteComics+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		61EF270529FBD39B00D6EAD7 /* FavoritesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
 		61EF270629FBD39B00D6EAD7 /* FavoritesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesCell.xib; sourceTree = "<group>"; };
+		61EF270929FC0D4C00D6EAD7 /* LicensingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				61E0210A29F865AA00C8BB07 /* FavoritesViewController.swift */,
 				61EF270529FBD39B00D6EAD7 /* FavoritesCell.swift */,
 				61EF270629FBD39B00D6EAD7 /* FavoritesCell.xib */,
+				61EF270929FC0D4C00D6EAD7 /* LicensingViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				61E0210B29F865AA00C8BB07 /* FavoritesViewController.swift in Sources */,
 				61EF270429FAF8B100D6EAD7 /* MyFavoriteComics+CoreDataProperties.swift in Sources */,
 				61E020FA29F3241E00C8BB07 /* ComicModel.swift in Sources */,
+				61EF270A29FC0D4C00D6EAD7 /* LicensingViewController.swift in Sources */,
 				61E020E529F30BD400C8BB07 /* SceneDelegate.swift in Sources */,
 				61E020FC29F32AB200C8BB07 /* ComicManager.swift in Sources */,
 				61E020FE29F3EB0400C8BB07 /* Alert.swift in Sources */,

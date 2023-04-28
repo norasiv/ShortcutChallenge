@@ -58,7 +58,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c3D-t4-xCL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="206" y="-247"/>
+            <point key="canvasLocation" x="995" y="-247"/>
         </scene>
         <!--Comic View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -240,7 +240,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="kHw-Mz-PtA">
                         <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="K0W-AU-zGq">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="TEz-yD-STt">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="TEz-yD-STt">
                                 <rect key="frame" x="288" y="5" width="86" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -249,6 +249,9 @@
                                 <state key="normal" title="Info">
                                     <color key="titleColor" red="0.1607843041" green="0.35686278339999999" blue="0.53333336109999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="oLL-hc-b7w" kind="presentation" id="zSX-Ul-5Cy"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -268,6 +271,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-709.23076923076917" y="495.49763033175356"/>
+        </scene>
+        <!--Licensing View Controller-->
+        <scene sceneID="5WC-Sq-leq">
+            <objects>
+                <viewController id="oLL-hc-b7w" customClass="LicensingViewController" customModule="ShortcutChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DUk-gh-7fI">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWy-gW-4A7">
+                                <rect key="frame" x="45" y="100" width="300" height="20.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Aoe-Oi-bcI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwn-Tl-Q36">
+                                <rect key="frame" x="123" y="170.33333333333334" width="144" height="35"/>
+                                <color key="tintColor" red="0.1607843041" green="0.35686278339999999" blue="0.53333336109999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go to xkcd.com"/>
+                                <connections>
+                                    <action selector="goToPressed:" destination="oLL-hc-b7w" eventType="touchUpInside" id="8x6-mu-PBR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RfF-zV-mxf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rwn-Tl-Q36" firstAttribute="top" secondItem="oWy-gW-4A7" secondAttribute="bottom" constant="50" id="0Zz-NE-eMO"/>
+                            <constraint firstItem="oWy-gW-4A7" firstAttribute="centerX" secondItem="DUk-gh-7fI" secondAttribute="centerX" id="aLR-cU-6oA"/>
+                            <constraint firstItem="rwn-Tl-Q36" firstAttribute="centerX" secondItem="DUk-gh-7fI" secondAttribute="centerX" id="awp-4P-LQN"/>
+                            <constraint firstItem="oWy-gW-4A7" firstAttribute="top" secondItem="RfF-zV-mxf" secondAttribute="top" constant="100" id="oUR-AC-jsy"/>
+                            <constraint firstItem="oWy-gW-4A7" firstAttribute="centerX" secondItem="DUk-gh-7fI" secondAttribute="centerX" id="qaC-5X-lgn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="licenseLabel" destination="oWy-gW-4A7" id="tiV-qZ-Xtj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mJN-lx-ouE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70.769230769230774" y="494.78672985781986"/>
         </scene>
         <!--Favorites View Controller-->
         <scene sceneID="4hH-I1-CLB">
@@ -298,7 +346,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zDc-rB-RzB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="204.61538461538461" y="494.78672985781986"/>
+            <point key="canvasLocation" x="995" y="495"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="vPN-ea-px0">
